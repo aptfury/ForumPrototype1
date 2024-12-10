@@ -1,30 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SectionsComponent } from './sections/sections.component';
-import { BoardsComponent } from './boards/boards.component';
-import { ThreadsComponent } from './threads/threads.component';
-import { PostsComponent } from './posts/posts.component';
-import { CreateComponent } from './create/create.component';
-import { ProfileComponent } from './profile/profile.component';
-import { AdminViewComponent } from './admin-view/admin-view.component';
+// import { AppServerModule } from './app.module.server';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SectionsComponent,
-    BoardsComponent,
-    ThreadsComponent,
-    PostsComponent,
-    CreateComponent,
-    ProfileComponent,
-    AdminViewComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    // AppServerModule
   ],
   providers: [
     provideClientHydration()
